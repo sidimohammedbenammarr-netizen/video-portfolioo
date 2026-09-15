@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: #c9974a;
+  color: #0a0a0b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Visible, consistent focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid #c9974a;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Custom range input (used by the lightbox progress + volume bars) */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: rgba(237, 237, 236, 0.25);
+  border-radius: 999px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  margin-top: -4.5px;
+  border-radius: 999px;
+  background: #e6b872;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-track {
+  height: 3px;
+  background: rgba(237, 237, 236, 0.25);
+  border-radius: 999px;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #e6b872;
+  cursor: pointer;
+}
