@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0a0a0b",
+        ink: "#1a1a1a",
         panel: "#141416",
         panel2: "#1c1c1f",
         line: "#2a2a2e",
